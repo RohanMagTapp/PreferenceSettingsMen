@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">PreferenceSettingsMenu</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="pref_browser_search_enteries">
+        <item>Google</item>
+        <item>Bing</item>
+        <item>DuckDuckGo</item>
+        <item>Yahoo! India</item>
+    </string-array>
+
+    <string-array name="pref_browser_search_values">
+        <item>google.com</item>
+        <item>bing.com</item>
+        <item>duckduckgo.com</item>
+        <item>in.yahoo.com</item>
+    </string-array>
+</resources>

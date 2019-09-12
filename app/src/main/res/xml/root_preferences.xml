@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Preference
+        android:icon="@mipmap/ic_launcher"
+        android:key="title"
+        android:title="Rohan Singh"
+        android:summary="rohansingh@gmail.com"/>
+    <PreferenceCategory
+        android:title="Basics">
+        <ListPreference
+            android:key="standarttab"
+            android:title="Standard Tab"
+            android:entries="@array/pref_browser_search_enteries"
+            android:entryValues="@array/pref_browser_search_values"
+            app:useSimpleSummaryProvider="true"
+            android:summary="Google"/>
+        <ListPreference
+            android:key="privatetab"
+            android:title="Private Tab"
+            android:entries="@array/pref_browser_search_enteries"
+            android:entryValues="@array/pref_browser_search_values"
+            app:useSimpleSummaryProvider="true"
+            android:summary="Google"/>
+        <Preference
+            android:key="homescreenlanguage"
+            android:title="Home Screen Content Laanguage"
+            android:summary="Hindi"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Data sync">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="browsingdata"
+            android:title="Browsing data"
+            android:summary="Sync, Auto-complete searches from address bar, search box &amp; browsing history"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="About App">
+        <Preference
+            android:key="applicationversion"
+            android:title="Application version"
+            android:summary="Magtapp 1.0 "/>
+        <Preference
+            android:key="operatingsystem"
+            android:title="Operating System"
+            android:summary="Android 9"/>
+        <Preference
+            android:key="legalinfo"
+            android:title="Legal Information"
+            android:fragment="com.example.android.preferencesettingsmenu.LegalSettingsPref"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
